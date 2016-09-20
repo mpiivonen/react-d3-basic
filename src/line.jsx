@@ -50,6 +50,7 @@ export default class LineChart extends Component {
       chartSeries,
       showXGrid,
       showYGrid,
+      xAxis,
       showLegend,
       categoricalColors
     } = this.props;
@@ -83,7 +84,7 @@ export default class LineChart extends Component {
           />
           {xgrid}
           {ygrid}
-          <Xaxis/>
+          <Xaxis {...xAxis} />
           <Yaxis/>
           {this.props.children}
         </Chart>
